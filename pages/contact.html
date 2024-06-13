@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oumar Compaore</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Oumar Compaore</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="diplomes.html">Diplômes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Contact</h2>
+            <div class="content">
+                <p>Email: <a href="mailto:compaore7435@gmail.com">compaore7435@gmail.com</a></p>
+                <p>Téléphone: <a href="tel:+22674354692">(+226) 743-546-92</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/oumar-compaore" target="_blank">Mon Profil LinkedIn</a></p>
+                
+            </div>
+        </section>
+        <section class="container">
+            <h2>Me laisser un message</h2>
+            <div class="content">
+                <form id="form">
+                    <label for="email">Saisir votre adresse email<span style="color: red;">*</span></label>
+                    <input type="email" id="email" required/>
+                    
+                    <label for="objet">Saisir l'objet <span style="color: red;">*</span></label>
+                    <input type="text" id="objet" required/>
+                    
+                    <label for="message">Saisir le message <span style="color: red;">*</span></label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+                    
+                    <button type="button" style="margin-top: 4px;" onclick="contacter()">Envoyer</button>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Oumar Compaore</p>
+    </footer>
+
+    <script>
+        function contacter(){
+            email = document.getElementById('email').value
+            objet = document.getElementById('objet').value
+            message = document.getElementById('message').value
+            if(email !== null && objet !== null && message !== null){
+                alert(.Votre )
+            }
+        }
+    </script>
+</body>
+</html>
