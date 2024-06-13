@@ -59,8 +59,11 @@
             email = document.getElementById('email').value
             objet = document.getElementById('objet').value
             message = document.getElementById('message').value
-            if(email !== null && objet !== null && message !== null){
-                alert(.Votre )
+            console.log(email,objet,message)
+            if(email !== '' && objet !== '' && message !== ''){
+                alert('Envoyé avec succès!')
+            }else{
+                alert('Veuillez renseigner tout les champs!')
             }
         }
     </script>
